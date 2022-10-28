@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "Running preinstall" > /tmp/printer.log 
+exit 0

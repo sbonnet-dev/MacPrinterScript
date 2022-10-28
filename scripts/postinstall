@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Running postinstall" >> /tmp/printer.log
+
+lpadmin -p "MYPRINTER" -E -v lpd://ADDRESS_IP/QUEUE_NAME -m drv:///sample.drv/generpcl.ppd -o printer-is-shared=false
+exit 0
